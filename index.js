@@ -27,7 +27,7 @@ const handlers = {
 
         var that = this;
 
-        request(URL + "/api/getAveragePriceByProcedure?name=" + itemName, function (error, response, body) {
+        request(URL + "/api/publicSearch/getAveragePriceByProcedure?name=" + itemName, function (error, response, body) {
             var data = JSON.parse(body);
             let procedurePrice = data.price;
             let procedureName = data.name;
